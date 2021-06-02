@@ -71,6 +71,7 @@ else:
     print("is an elder")"""
 
 #5.7 list fruits 5 ifs statements match diferentes fruits in the list
+"""
 favorite_fruit = ["naranja", "banano", "manzana", "mango",]
 if "naranja" in favorite_fruit:
     print("naranja")
@@ -81,6 +82,26 @@ if "banano" in favorite_fruit:
 if "mango" in favorite_fruit:
     print("mango")
 if "pera" not in favorite_fruit:
-    print("pera")
+    print("pera")"""
 
+#5.8 list username for admin message especial, for other users greetin generic
+"""
+username = ["admin", "erick", "patricia", "claudia", "manuel"]
+for user in username :
+    if user == "admin":
+        print("Hello admin, would you like to see a status report?")
+    else:
+        print("Hello" , user ,"welcome back!!")"""
 
+#5.9add if statement make sure the list of users is not empty.
+
+#username = ["admin", "erick", "patricia", "claudia", "manuel"]
+username = [] # emptylist
+if username :
+    for user in username :
+        if user == "admin":
+            print("Hello admin, would you like to see a status report?")
+        else:
+            print("Hello" , user ,"welcome back!!")
+else :
+    print("We need to find some users")
