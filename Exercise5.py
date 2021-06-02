@@ -94,7 +94,7 @@ for user in username :
         print("Hello" , user ,"welcome back!!")"""
 
 #5.9add if statement make sure the list of users is not empty.
-
+"""
 #username = ["admin", "erick", "patricia", "claudia", "manuel"]
 username = [] # emptylist
 if username :
@@ -104,4 +104,36 @@ if username :
         else:
             print("Hello" , user ,"welcome back!!")
 else :
-    print("We need to find some users")
+    print("We need to find some users")"""
+
+#5.10 create a program that simulates
+#how websites ensure that everyone has a unique username. 
+#recorra la lista y compruebe si ya existe el nick, case sensitive
+"""
+current_users = ["Admin", "erick", "patricia", "claudia", "manuel"]
+new_users = ["admin", "maira", "sara", "fernando", "ERICK"]
+current_users_lower = [userlow.lower() for userlow in current_users]
+#current_users_lower = []  crear lista de usuarios actuales en miniscula
+#for user in current_users:
+#    current_users_lower.append(user.lower())
+for new_user in new_users :
+    if new_user.lower() in current_users_lower :
+            print("Este usuario ya existe, ingrese un nuvo nombre de usuario")
+    else:
+        print("El nombre de usuario esta disponible")
+print(new_users) # la lista original sigue con letras mayusculas
+"""
+
+#5.11 numeros ordinales, use if-elif-else
+
+ordinal_numbers = list(range(1,10))
+for number in ordinal_numbers:
+    if number == 1 :
+        print(str(number)+"st")
+    elif number == 2:
+        print(str(number)+"nd")
+    elif number ==3 :
+        print(str(number)+"rd")
+    else:
+        print(str(number)+"th")
+
