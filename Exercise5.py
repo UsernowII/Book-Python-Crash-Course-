@@ -71,6 +71,7 @@ else:
     print("is an elder")"""
 
 #5.7 list fruits 5 ifs statements match diferentes fruits in the list
+"""
 favorite_fruit = ["naranja", "banano", "manzana", "mango",]
 if "naranja" in favorite_fruit:
     print("naranja")
@@ -81,6 +82,58 @@ if "banano" in favorite_fruit:
 if "mango" in favorite_fruit:
     print("mango")
 if "pera" not in favorite_fruit:
-    print("pera")
+    print("pera")"""
 
+#5.8 list username for admin message especial, for other users greetin generic
+"""
+username = ["admin", "erick", "patricia", "claudia", "manuel"]
+for user in username :
+    if user == "admin":
+        print("Hello admin, would you like to see a status report?")
+    else:
+        print("Hello" , user ,"welcome back!!")"""
+
+#5.9add if statement make sure the list of users is not empty.
+"""
+#username = ["admin", "erick", "patricia", "claudia", "manuel"]
+username = [] # emptylist
+if username :
+    for user in username :
+        if user == "admin":
+            print("Hello admin, would you like to see a status report?")
+        else:
+            print("Hello" , user ,"welcome back!!")
+else :
+    print("We need to find some users")"""
+
+#5.10 create a program that simulates
+#how websites ensure that everyone has a unique username. 
+#recorra la lista y compruebe si ya existe el nick, case sensitive
+"""
+current_users = ["Admin", "erick", "patricia", "claudia", "manuel"]
+new_users = ["admin", "maira", "sara", "fernando", "ERICK"]
+current_users_lower = [userlow.lower() for userlow in current_users]
+#current_users_lower = []  crear lista de usuarios actuales en miniscula
+#for user in current_users:
+#    current_users_lower.append(user.lower())
+for new_user in new_users :
+    if new_user.lower() in current_users_lower :
+            print("Este usuario ya existe, ingrese un nuvo nombre de usuario")
+    else:
+        print("El nombre de usuario esta disponible")
+print(new_users) # la lista original sigue con letras mayusculas
+"""
+
+#5.11 numeros ordinales, use if-elif-else
+
+ordinal_numbers = list(range(1,10))
+for number in ordinal_numbers:
+    if number == 1 :
+        print(str(number)+"st")
+    elif number == 2:
+        print(str(number)+"nd")
+    elif number ==3 :
+        print(str(number)+"rd")
+    else:
+        print(str(number)+"th")
 
