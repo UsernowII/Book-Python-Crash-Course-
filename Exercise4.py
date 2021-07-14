@@ -1,12 +1,12 @@
 #4.1 use a for loop to print name of each from list
-
+"""
 pizzas = ["pollo con champiñon" , "Hawaiana" , "peperoni" ]
 for piza in pizzas:
     print(piza)
 print("\n")
 for piza in pizzas:
     print("Mi piza favorita es la de " + piza)
-print("\nI really love pizza")
+print("\nI really love pizza")"""
 
 #4.2 list animals
 """

@@ -91,6 +91,7 @@ for animal in animals[1:4]:
     print(animal)
 print("Los tres  ultimos elementos de la lista son")
 print(animals[-3:])"""
+"""
 people = []
 person= {
     'first name': "Daniel", 'last name': 
@@ -114,12 +115,13 @@ for person in people:
     print(f"tiene {age} años")
     print(f"Vive en la ciudad de {city}")
     print()
-
+"""
 #6.8
 # Make an empty list to store the pets in.
 pets = []
 
 # Make individual pets, and store each one in the list.
+"""
 pet = {
     'animal type': 'python',
     'name': 'john',
@@ -143,5 +145,53 @@ for pet in pets:
     print("Here's what i know about {}".format(name))
     for x, y in pet.items():
         print("\t" + x + ": " + str(y))
+"""
+#6.9 Make a dicctionary, three names as keys and store three values , loop throught the dictionary
+"""
+favorite_places = {
+    "jeison" : ["bosa","casa", "trabajo" ],
+    "Daniel" : ["Villa del rio", "casa", "homework"],
+    "Sergio" : ["bosa", "casa", "tostao"]
+    }
 
-#6.9
+for names,places in favorite_places.items():
+    print(names.title(), "likes the following places:")
+    for place in places:
+         print("\t-", place.title())
+
+"""
+#6.10 modify program exercise 6.2 for eac person more  than one favorite number
+"""
+favorite_numbers = {
+    'daniel': [69,22,86], 'jeison': [32,25,86],
+    'sergio': [17,86,58], 'erick': [72,86,45]
+     }
+
+for name, numbers in favorite_numbers.items():
+    print(f"{name.title()}´s favorite numbers are: ")
+    for number in numbers:
+        print("-", number)
+
+"""
+#6.11 Make a dictionary called countrys. use three cities as keys and store information about these countrys
+#in another one dictionary
+
+countrys = {
+    "Colombia" : {"capital city": "Bogota", "poblation" :50347000 , "Nationality" : "Colombian"},
+    "Mexico" : {"capital city": "MDX", "poblation": 1000356891, "Nationality": "Mexican"},
+    }
+
+for country, country_info in countrys.items():
+    capital_city = country_info["capital city"]
+    poblation = country_info["poblation"]
+    nationality = country_info["Nationality"].title()
+
+    print(country,"\n\tYour capital is", capital_city)
+    print("\tPoblation are :",poblation, "population.")
+    print("\tThe nationality is", nationality)
+
+
+
+
+
+
