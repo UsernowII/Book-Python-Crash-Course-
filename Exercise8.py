@@ -213,7 +213,7 @@ print(user_profile)
 
 #8.14 Write a function store information about the car < manufacturer> <model>
 # and accept an arbitrary number of keyword arguments.store in dictionary
-
+"""
 def make_car(manufacturer, model, **feautres):
     car= {
         "manufacturer": manufacturer,
@@ -224,6 +224,13 @@ def make_car(manufacturer, model, **feautres):
         car[feature] = value
 
     return car
-
 car = make_car("subaru", "outback", color = "blue", tow_package = True)
 print(car)
+"""
+#8.15 import functions from modules
+#module name is " modulo "
+#import modulo  #importa todo el modulo
+#from modulo import function_name  # importa x funcion del modulo
+#from modulo import function_name as fn #importa x funcion del modulo con un alias
+#import modulo as md # importa el modulo con un alias
+#from modulo import* # importa el modulo sin necesidad de usar alias en las funciones
