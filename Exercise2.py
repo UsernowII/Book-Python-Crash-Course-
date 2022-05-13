@@ -6,7 +6,7 @@
 """
 message = "hello world python"
 print(message)
-message = 'hello world from python crush coursw'
+message = 'hello world from python crush course'
 print(message)"""
 
 #2.3
