@@ -6,7 +6,7 @@
 """
 message = "hello world python"
 print(message)
-message = 'hello world from python crush coursw'
+message = 'hello world from python crush course'
 print(message)"""
 
 #2.3
@@ -22,7 +22,7 @@ print(name.lower())"""
 
 #2.5
 """
-print('victor Robles once said,\n"Programar es programar!!!, practica como un hijo de perra"')"""
+print('victor Robles once said,\n"Programar es programar!!!, practica como nunca"')"""
 
 #2.6
 """
